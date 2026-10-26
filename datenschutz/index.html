@@ -18,7 +18,7 @@
 <body>
 <h1>Datenschutzerklärung – Ego</h1>
 
-<p class="stand">Stand: 25. September 2026</p>
+<p class="stand">Stand: 25. Oktober 2026</p>
 
 <p>Diese Datenschutzerklärung gilt für die iOS-App <strong>Ego</strong> (nachfolgend „App“).</p>
 
@@ -48,7 +48,7 @@ E-Mail: <a href="mailto:emil.banse@icloud.com">emil.banse@icloud.com</a></p>
 <ul>
 <li>Deine erfassten Gedanken (Text), inklusive der von der KI erzeugten Metadaten: Titel, Zusammenfassung, Kategorie, Schlagwörter, Stimmung, Handlungsvorschläge, Verknüpfungen, Cluster und Rückblicke</li>
 <li>Optional: ungefährer Standort und Zeitzone zur besseren Einordnung. Der Standort wird erst erfasst, wenn du Ego die Ortungsfreigabe erteilst; danach geschieht das beim Erfassen automatisch, und du kannst es in den Einstellungen jederzeit abschalten</li>
-<li>Spracheingaben werden durch die Apple-Spracherkennung in Text umgewandelt. Je nach Gerät geschieht das auf dem Gerät oder auf Servern von Apple; im zweiten Fall erhält Apple die Audioaufnahme zur Umwandlung. Wir erhalten nur den fertigen Text und speichern keine Audioaufnahmen</li>
+<li>Spracheingaben werden während der Aufnahme durch die Apple-Spracherkennung als Vorschau in Text umgewandelt. Je nach Gerät geschieht das auf dem Gerät oder auf Servern von Apple; im zweiten Fall erhält Apple die Audioaufnahme zur Umwandlung. Mit Ego Plus und deiner Zustimmung zur KI-Analyse schickt die App die Aufnahme nach dem Stoppen zusätzlich über unseren Server an OpenAI, die daraus den endgültigen Text erstellt. Wir speichern keine Audioaufnahmen; unser Server reicht die Aufnahme nur durch</li>
 </ul>
 
 <p>Ohne aktives Abo oder ohne deine Zustimmung zur KI-Analyse synchronisiert Ego nicht; neue Gedanken bleiben dann ausschließlich lokal auf deinem Gerät.</p>
@@ -71,9 +71,9 @@ E-Mail: <a href="mailto:emil.banse@icloud.com">emil.banse@icloud.com</a></p>
 <thead><tr><th>Verarbeitung</th><th>Zweck</th><th>Rechtsgrundlage</th></tr></thead>
 <tbody>
 <tr><td>Konto, Login, Synchronisierung</td><td>Bereitstellung der App</td><td>Art. 6 Abs. 1 lit. b (Vertrag)</td></tr>
-<tr><td>KI-Analyse deiner Gedanken (Übermittlung an OpenAI)</td><td>Kernfunktion von Ego Plus (automatische Organisation), Ask, Suche, Entscheidungs-Spiegel und Dialog zu wiederentdeckten Gedanken</td><td>Art. 6 Abs. 1 lit. a (Einwilligung in der App, jederzeit in den Einstellungen widerrufbar)</td></tr>
+<tr><td>KI-Analyse deiner Gedanken (Übermittlung an OpenAI)</td><td>Kernfunktion von Ego Plus (automatische Organisation), Umwandlung von Spracheingaben in Text, Ask, Suche, Entscheidungs-Spiegel und Dialog zu wiederentdeckten Gedanken</td><td>Art. 6 Abs. 1 lit. a (Einwilligung in der App, jederzeit in den Einstellungen widerrufbar)</td></tr>
 <tr><td>Abostatus-Verwaltung</td><td>Freischaltung von Ego Plus</td><td>Art. 6 Abs. 1 lit. b (Vertrag)</td></tr>
-<tr><td>Ungefährer Standort</td><td>Kontext beim Erfassen</td><td>Art. 6 Abs. 1 lit. a (Einwilligung, jederzeit widerrufbar)</td></tr>
+<tr><td>Ungefährer Standort</td><td>Kontext beim Erfassen, Stadtplan des Orts im Tagesbogen</td><td>Art. 6 Abs. 1 lit. a (Einwilligung, jederzeit widerrufbar)</td></tr>
 <tr><td>Protokolldaten</td><td>Betriebssicherheit, Fehlersuche</td><td>Art. 6 Abs. 1 lit. f (berechtigtes Interesse)</td></tr>
 </tbody>
 </table>
@@ -85,8 +85,9 @@ E-Mail: <a href="mailto:emil.banse@icloud.com">emil.banse@icloud.com</a></p>
 <ul>
 <li><strong>Supabase</strong> (Datenbank, Authentifizierung, Server-Funktionen) – Speicherung deiner synchronisierten Inhalte und Kontodaten. Hosting-Region: London, Vereinigtes Königreich (AWS eu-west-2); für das Vereinigte Königreich besteht ein Angemessenheitsbeschluss der EU-Kommission. Auftragsverarbeitung auf Grundlage des Supabase Data Processing Addendum.</li>
 <li><strong>PowerSync</strong> (Synchronisierungsdienst) – technische Übertragung zwischen Gerät und Datenbank. Hosting-Region: EU. Auftragsverarbeitung auf Grundlage des PowerSync Data Processing Agreement.</li>
-<li><strong>OpenAI</strong> (KI-Analyse) – deine Gedankentexte (mit Titel, Schlagwörtern, Ortsname und Zeit), deine Fragen in „Frag deine Gedanken“, in der Suche und im Entscheidungs-Spiegel sowie deine Antworten im Dialog zu „Ein Gedanke von damals“ werden zur Analyse an die OpenAI-API übermittelt (Serverstandort u. a. USA). Das geschieht erst, nachdem du in der App ausdrücklich zugestimmt hast; ohne diese Zustimmung bleibt alles auf deinem Gerät. Du kannst deine Zustimmung jederzeit in den Einstellungen unter „KI-Analyse (OpenAI)“ widerrufen — sobald der Widerruf unseren Server erreicht (ohne Verbindung beim nächsten App-Start), wird nichts mehr an OpenAI gesendet, auch nicht durch Hintergrundverarbeitung auf unseren Servern (etwa Analyse, Kategorien, Rückblicke oder wiederentdeckte Gedanken); dein Gerät synchronisiert ab dem Widerruf sofort nicht mehr. Dafür speichern wir deine Entscheidung auch auf unserem Server; jede KI-Verarbeitung prüft sie vorher. Die Übermittlung erfolgt ausschließlich serverseitig; API-Daten werden von OpenAI gemäß deren Business Terms nicht zum Training von Modellen verwendet. Grundlage der Drittlandübermittlung: EU-Standardvertragsklauseln im OpenAI Data Processing Addendum bzw. EU-US Data Privacy Framework.</li>
+<li><strong>OpenAI</strong> (KI-Analyse) – deine Gedankentexte (mit Titel, Schlagwörtern, Ortsname und Zeit), deine Sprachaufnahmen beim Diktieren, deine Fragen in „Frag deine Gedanken“, in der Suche und im Entscheidungs-Spiegel sowie deine Antworten im Dialog zu „Ein Gedanke von damals“ werden zur Analyse an die OpenAI-API übermittelt (Serverstandort u. a. USA). Das geschieht erst, nachdem du in der App ausdrücklich zugestimmt hast; ohne diese Zustimmung bleibt alles auf deinem Gerät. Du kannst deine Zustimmung jederzeit in den Einstellungen unter „KI-Analyse (OpenAI)“ widerrufen — sobald der Widerruf unseren Server erreicht (ohne Verbindung beim nächsten App-Start), wird nichts mehr an OpenAI gesendet, auch nicht durch Hintergrundverarbeitung auf unseren Servern (etwa Analyse, Kategorien, Rückblicke oder wiederentdeckte Gedanken); dein Gerät synchronisiert ab dem Widerruf sofort nicht mehr. Dafür speichern wir deine Entscheidung auch auf unserem Server; jede KI-Verarbeitung prüft sie vorher. Die Übermittlung erfolgt ausschließlich serverseitig; API-Daten werden von OpenAI gemäß deren Business Terms nicht zum Training von Modellen verwendet. Grundlage der Drittlandübermittlung: EU-Standardvertragsklauseln im OpenAI Data Processing Addendum bzw. EU-US Data Privacy Framework.</li>
 <li><strong>Apple</strong> (App-Vertrieb, In-App-Käufe, „Mit Apple anmelden“, Spracherkennung) – eigener Verantwortlicher für die Kaufabwicklung und die Spracherkennung auf Apple-Servern.</li>
+<li><strong>OpenFreeMap</strong> (Kartendaten von OpenStreetMap) – Hat ein Gedanke einen Standort, lädt die App für den Stadtplan im Tagesbogen die Straßen der Umgebung als Kartenkacheln direkt von OpenFreeMap, das sie über das Netzwerk von Cloudflare (USA) ausliefert. Dabei erhalten OpenFreeMap und Cloudflare deine IP-Adresse und, an den angefragten Kacheln, ein Gebiet von einigen Kilometern um den Ort; Gedankentexte, Zeitpunkte und Kontodaten werden nicht übertragen. OpenFreeMap setzt keine Cookies und verlangt kein Konto. Den fertigen Plan speichert die App nur auf deinem Gerät.</li>
 </ul>
 
 <p>Soweit Dienstleister Daten außerhalb der EU/des EWR verarbeiten (insb. USA), erfolgt dies auf Grundlage von EU-Standardvertragsklauseln bzw. des EU-US Data Privacy Framework, soweit der jeweilige Anbieter zertifiziert ist.</p>
