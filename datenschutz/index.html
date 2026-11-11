@@ -18,7 +18,7 @@
 <body>
 <h1>Datenschutzerklärung – Ego</h1>
 
-<p class="stand">Stand: 10. November 2026</p>
+<p class="stand">Stand: 11. November 2026</p>
 
 <p>Diese Datenschutzerklärung gilt für die iOS-App <strong>Ego</strong> (nachfolgend „App“).</p>
 
@@ -29,7 +29,7 @@ E-Mail: <a href="mailto:emil.banse@icloud.com">emil.banse@icloud.com</a></p>
 
 <h2>2. Überblick</h2>
 
-<p>Ego ist eine App zum schnellen Festhalten von Gedanken. Deine Gedanken werden zuerst <strong>lokal auf deinem Gerät</strong> gespeichert. Mit einem aktiven <strong>Ego-Plus-Abo</strong> und deiner ausdrücklichen Zustimmung in der App werden sie zusätzlich verschlüsselt in die Cloud synchronisiert und dort automatisch durch KI analysiert (Kategorien, Schlagwörter, Zusammenfassungen, Verknüpfungen, Rückblicke). Ohne diese Zustimmung wird nichts synchronisiert oder an eine KI übermittelt, auch nicht mit aktivem Abo.</p>
+<p>Ego ist eine App zum schnellen Festhalten von Gedanken. Deine Gedanken werden zuerst <strong>lokal auf deinem Gerät</strong> gespeichert. Mit deiner ausdrücklichen Zustimmung in der App werden sie zusätzlich verschlüsselt in die Cloud synchronisiert und dort automatisch durch KI analysiert (Kategorien, Schlagwörter, Zusammenfassungen, Verknüpfungen). Mit einem aktiven <strong>Ego-Plus-Abo</strong> gilt das dauerhaft und für alle Gedanken. Ohne Abo synchronisiert Ego, bis 20 Gedanken deines Kontos den Server erreicht haben und analysiert sind, und analysiert nur diese ersten 20 (Einzelheiten in Abschnitt 3.2). Rückblicke und die weiteren KI-Funktionen gibt es nur mit Ego Plus. Ohne deine Zustimmung wird nichts synchronisiert oder an eine KI übermittelt, auch nicht mit aktivem Abo.</p>
 
 <p>Grundsatz: <strong>Privat by default.</strong> Jede Nutzerin und jeder Nutzer sieht ausschließlich die eigenen Daten. Es gibt keine Werbung, kein Tracking zu Werbezwecken und keinen Verkauf von Daten. Eine inhaltsfreie Zählung, wie oft die App dir einen älteren Gedanken zurückgibt (Abschnitt 3.5), braucht weder Ego Plus noch die Zustimmung zur KI-Analyse.</p>
 
@@ -43,7 +43,7 @@ E-Mail: <a href="mailto:emil.banse@icloud.com">emil.banse@icloud.com</a></p>
 <li>Deine Entscheidung zur KI-Analyse (Zustimmung oder Ablehnung mit Zeitpunkt), damit auch unsere Server nur mit deiner Zustimmung KI-Funktionen ausführen</li>
 </ul>
 
-<h3>3.2 Inhalte (nur mit Ego Plus in der Cloud)</h3>
+<h3>3.2 Inhalte (in der Cloud nur mit deiner Zustimmung)</h3>
 
 <ul>
 <li>Deine erfassten Gedanken (Text), inklusive der von der KI erzeugten Metadaten: Titel, Zusammenfassung, Kategorie, Schlagwörter, Stimmung, Handlungsvorschläge, Verknüpfungen, Cluster und Rückblicke</li>
@@ -51,7 +51,11 @@ E-Mail: <a href="mailto:emil.banse@icloud.com">emil.banse@icloud.com</a></p>
 <li>Spracheingaben werden während der Aufnahme durch die Apple-Spracherkennung als Vorschau in Text umgewandelt. Je nach Gerät geschieht das auf dem Gerät oder auf Servern von Apple; im zweiten Fall erhält Apple die Audioaufnahme zur Umwandlung. Mit Ego Plus und deiner Zustimmung zur KI-Analyse schickt die App die Aufnahme nach dem Stoppen zusätzlich über unseren Server an OpenAI, die daraus den endgültigen Text erstellt. Wir speichern keine Audioaufnahmen; unser Server reicht die Aufnahme nur durch</li>
 </ul>
 
-<p>Ohne aktives Abo oder ohne deine Zustimmung zur KI-Analyse synchronisiert Ego nicht; neue Gedanken bleiben dann ausschließlich lokal auf deinem Gerät.</p>
+<p>Ohne deine Zustimmung zur KI-Analyse synchronisiert Ego nicht; deine Gedanken bleiben dann ausschließlich lokal auf deinem Gerät. Mit Zustimmung, aber ohne aktives Abo synchronisiert Ego, bis 20 Gedanken deines Kontos den Server erreicht haben; später gelöschte zählen mit. In dieser Zeit überträgt die App alle Gedanken, die auf deinem Gerät liegen, also auch mehr als 20, wenn du vorher schon mehr erfasst oder importiert hast. Die ersten 20 Gedanken, die den Server erreichen, analysiert die KI. Alle weiteren liegen auf unserem Server, bekommen ohne Abo aber keine eigene Analyse. Sind die 20 erreicht und analysiert, endet die Synchronisierung, sobald die App das beim Öffnen feststellt; bis dahin erfasste Gedanken überträgt sie noch. Danach bleiben neue Gedanken auf deinem Gerät. Auch den Ablauf eines Abos stellt die App erst beim nächsten Start fest und synchronisiert bis dahin weiter.</p>
+
+<p>Bei der Analyse eines Gedankens schickt Ego Auszüge anderer Gedanken von dir als Kontext mit an OpenAI: Titel, Kategorie und Schlagwörter, bei früheren oder ähnlichen Gedanken auch Text. Das können auch Gedanken sein, die selbst keine Analyse bekommen.</p>
+
+<p>Was synchronisiert wurde, bleibt auf dem Server gespeichert; zur Löschung siehe Abschnitt 6.</p>
 
 <h3>3.3 Kauf- und Abodaten (Ego Plus)</h3>
 
@@ -77,7 +81,7 @@ E-Mail: <a href="mailto:emil.banse@icloud.com">emil.banse@icloud.com</a></p>
 <thead><tr><th>Verarbeitung</th><th>Zweck</th><th>Rechtsgrundlage</th></tr></thead>
 <tbody>
 <tr><td>Konto, Login, Synchronisierung</td><td>Bereitstellung der App</td><td>Art. 6 Abs. 1 lit. b (Vertrag)</td></tr>
-<tr><td>KI-Analyse deiner Gedanken (Übermittlung an OpenAI)</td><td>Kernfunktion von Ego Plus (automatische Organisation), Umwandlung von Spracheingaben in Text, Ask, Suche, Entscheidungs-Spiegel und Dialog zu wiederentdeckten Gedanken</td><td>Art. 6 Abs. 1 lit. a (Einwilligung in der App, jederzeit in den Einstellungen widerrufbar)</td></tr>
+<tr><td>KI-Analyse deiner Gedanken (Übermittlung an OpenAI)</td><td>Automatische Organisation deiner Gedanken (ohne Abo für die ersten 20 Gedanken, mit Ego Plus für alle); mit Ego Plus außerdem Umwandlung von Spracheingaben in Text, Ask, Suche, Entscheidungs-Spiegel und Dialog zu wiederentdeckten Gedanken</td><td>Art. 6 Abs. 1 lit. a (Einwilligung in der App, jederzeit in den Einstellungen widerrufbar)</td></tr>
 <tr><td>Abostatus-Verwaltung</td><td>Freischaltung von Ego Plus</td><td>Art. 6 Abs. 1 lit. b (Vertrag)</td></tr>
 <tr><td>Ungefährer Standort</td><td>Kontext beim Erfassen, Stadtplan des Orts im Tagesbogen</td><td>Art. 6 Abs. 1 lit. a (Einwilligung, jederzeit widerrufbar)</td></tr>
 <tr><td>Protokolldaten</td><td>Betriebssicherheit, Fehlersuche</td><td>Art. 6 Abs. 1 lit. f (berechtigtes Interesse)</td></tr>
@@ -109,7 +113,7 @@ E-Mail: <a href="mailto:emil.banse@icloud.com">emil.banse@icloud.com</a></p>
 <li>Zähler der Rückflussmomente: bis zur Löschung deines Kontos.</li>
 </ul>
 
-<p>Löschst du einen Gedanken in der App, wird er auch serverseitig endgültig gelöscht (harte Löschung inklusive abgeleiteter KI-Daten wie Embeddings und Verknüpfungen). Nach einem Widerruf der KI-Zustimmung synchronisiert Ego nicht mehr: Einen Gedanken, den du danach in der App löschst, löschen wir auf dem Server erst, wenn du wieder zustimmst und die App synchronisiert, oder mit der Löschung deines Kontos.</p>
+<p>Löschst du einen Gedanken in der App, wird er auch serverseitig endgültig gelöscht (harte Löschung inklusive abgeleiteter KI-Daten wie Embeddings und Verknüpfungen). Solange Ego nicht synchronisiert, erreicht eine Löschung den Server nicht: nach einem Widerruf der KI-Zustimmung, ohne Abo nach den 20 Gedanken und nach dem Ablauf eines Abos. Einen Gedanken, den du in dieser Zeit in der App löschst, löschen wir auf dem Server, sobald die App wieder synchronisiert, oder mit der Löschung deines Kontos. Dafür braucht es deine Zustimmung und, wenn die 20 Gedanken erreicht sind, Ego Plus.</p>
 
 <h2>7. Deine Rechte</h2>
 
